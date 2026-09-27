@@ -1,0 +1,101 @@
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px; 
+}
+
+.name {
+  font-size: 4rem;
+  margin: 0 0 20px 0;
+  font-family: "Sanchez", serif;
+  font-weight: 400;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #ff66c4;
+}
+
+.menu {
+  display: flex;
+  gap: 70px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: monospace, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu button:hover {
+  opacity: 0.5;
+}
+
+.menu button.active {
+  color: #ff66c4; 
+}
+
+.content-box {
+  max-width: 1500px;
+  width: 90%; 
+  text-align: left;
+  font-family: monospace, sans-serif;
+  font-size: 1.3rem;
+  box-sizing: border-box; 
+}
+
+/* Responsive adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.5rem; /* Scales down your name */
+    text-align: center;
+  }
+
+  .social-links {
+    font-size: 1.1rem;
+    gap: 10px; /* Reduces spacing between links */
+  }
+
+  .menu {
+    flex-wrap: wrap; 
+    /* Allows the menu buttons to wrap to a new line instead of overflowing */
+    justify-content: center;
+    gap: 15px; /* Significantly reduces the 70px gap for mobile */
+  }
+
+  .menu button {
+    font-size: 1.1rem;
+  }
+
+  .content-box {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,65 @@
+.content-box p {
+  margin: 0 0 15px 0;
+  line-height: 1.6; 
+  font-size: 1.3rem;
+}
+
+/* Removes the margin from the very last paragraph */
+.content-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+.highlight { color: #ff66c4; }
+.purple { color: #cb6ce6; }
+.yellow { color: #ffbd59; }
+.grey { color: #b4b4b4; }
+
+.single-box {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.education-container {
+  display: flex;
+  gap: 20px;
+}
+
+.edu-menu {
+  flex: 1; /* Takes up 1 part of the width */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edu-item {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.edu-item:hover {
+  opacity: 0.7;
+}
+
+.edu-item.active {
+  color: #ff66c4; /* Turns pink when active */
+}
+
+/* Right Column: The Details */
+.edu-details {
+  flex: 2; /* Takes up 2 parts of the width (wider than menu) */
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Mobile responsiveness for Education layout */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #131313;
+  color: #ffffff;
+  font-family: monospace, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 
+  Imagine you order a cardboard box that is exactly 100px wide.
+
+  By default in web development, if you put some bubble wrap (padding) inside that box to protect the contents, the browser actually expands the outside of the box to make room. So your 100px box suddenly becomes 120px wide. This makes creating layouts very frustrating because things keep changing sizes.
+
+  box-sizing: border-box; fixes this. It tells the browser: "If I say this box is 100px wide, keep it exactly 100px wide. If I add padding or a thick border, push the content inward to make room, but do not change the outside size of the box."
+
+  It makes sizing things much more predictable. 
+*/
+
+/* 
+  vh stands for "viewport height". This forces the webpage body to be at least 100% as tall as your screen. Without this, the dark background would stop exactly where your text stops, leaving a white gap at the bottom of the screen. 
+*/
