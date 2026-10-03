@@ -6,10 +6,11 @@ import Education from './Components/Contents/Education';
 import Exp from './Components/Contents/Exp';
 import Skills from './Components/Contents/Skills';
 import Projs from './Components/Contents/Projs';
+import Resume from './Components/Contents/Resume';
 
 
 function App() {
-  const tabs = ['About', 'Education', 'Experience', 'Projects', 'Skills & Tools'];
+  const tabs = ['About', 'Education', 'Experience', 'Projects', 'Skills & Tools', 'Resume'];
   const [activeTab, setActiveTab] = useState('About');
 
   const renderContent = () => {
@@ -24,6 +25,8 @@ function App() {
         return <Skills />
       case 'Projects':
         return <Projs />
+      case 'Resume':
+        return <Resume />
       default:
         return <About />
     }
